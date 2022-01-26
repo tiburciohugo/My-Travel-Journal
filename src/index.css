@@ -117,6 +117,7 @@ body {
   background-color: #f55a5a;
   justify-content: center;
   position: relative;
+  margin: 0 10px;
 }
 
 .footer > p {
@@ -124,25 +125,34 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+
   .app {
     width: auto;
-    margin-right: 20px;
   }
 }
 
 @media (max-width: 425px) {
-  .app {
+  body {
+    max-width: 425px;
+  }
+
+  .app,
+  .navbar,
+  .footer {
     width: auto;
-    margin-right: 20px;
+    margin: 10px;
   }
 
-  /* .card {
-    margin: 20px;
+  .card {
+    margin: 0 0 10px 0;
   }
 
-  .cards-list {
+  /* .cards-list {
     gap: 100px;
     overflow-x: auto;
     overflow-y: auto;
-  } */
+  }  */
 }
